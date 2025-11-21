@@ -128,7 +128,7 @@ def reset_program():
 # Modern UI Setup
 # -------------------
 root = TkinterDnD.Tk()
-root.title("Proccess GIS for Water Budget")
+root.title("Drag and drop file processor")
 root.geometry("600x420")
 root.configure(bg="#f5f5f7")
 
@@ -140,7 +140,7 @@ font_small = ("Segoe UI", 10)
 # Header
 header = tk.Label(
     root,
-    text="GIS Processor for Water Budget",
+    text="Drag and drop file processor",
     font=font_large,
     bg="#f5f5f7",
     fg="#333"
@@ -224,5 +224,3 @@ save_button.bind("<Button-1>", open_save_menu)
 save_button.config(state=tk.DISABLED)
 
 root.mainloop()
-
-
