@@ -31,7 +31,7 @@ def process_input_file(file_path):
 
 
         # Example transformation (you can change this)
-        # df["Total"] = df.select_dtypes(include='number').sum(axis=1)
+        df["Comments"] = "Hey this is an added comment"
 
 
 
@@ -224,4 +224,5 @@ save_button.bind("<Button-1>", open_save_menu)
 save_button.config(state=tk.DISABLED)
 
 root.mainloop()
+
 
