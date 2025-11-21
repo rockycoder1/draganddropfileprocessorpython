@@ -67,7 +67,7 @@ def drop_file(event):
     
     if os.path.isfile(filepath) and (ext.endswith(".csv") or ext.endswith(".xlsx")):
         process_input_file(filepath)
-        drop_label.config(text="File uploaded!", bg="#d1ffd6")
+        drop_label.config(text="File uploaded and processed!", bg="#d1ffd6")
     else:
         messagebox.showwarning("Invalid File", "Please drop a valid CSV file.")
     return "copy"
@@ -224,3 +224,4 @@ save_button.bind("<Button-1>", open_save_menu)
 save_button.config(state=tk.DISABLED)
 
 root.mainloop()
+
