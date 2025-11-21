@@ -4,8 +4,6 @@ from tkinter import filedialog, messagebox
 from tkinterdnd2 import DND_FILES, TkinterDnD
 import pandas as pd
 import os
-from datetime import datetime
-from collections import defaultdict
 
 processed_df = None
 
@@ -226,3 +224,4 @@ save_button.bind("<Button-1>", open_save_menu)
 save_button.config(state=tk.DISABLED)
 
 root.mainloop()
+
