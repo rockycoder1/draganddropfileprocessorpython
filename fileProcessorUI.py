@@ -5,6 +5,8 @@ from tkinterdnd2 import DND_FILES, TkinterDnD
 import pandas as pd
 import os
 
+# may need to do pip install openpyxl
+
 processed_df = None
 
 # -------------------
@@ -224,4 +226,5 @@ save_button.bind("<Button-1>", open_save_menu)
 save_button.config(state=tk.DISABLED)
 
 root.mainloop()
+
 
